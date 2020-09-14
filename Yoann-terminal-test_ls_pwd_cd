@@ -1,0 +1,55 @@
+yoann@yoann-VirtualBox:~$ ls
+Bureau     Dropbox  Modèles  Public  Téléchargements
+Documents  Images   Musique  snap    Vidéos
+yoann@yoann-VirtualBox:~$ ls .
+Bureau     Dropbox  Modèles  Public  Téléchargements
+Documents  Images   Musique  snap    Vidéos
+yoann@yoann-VirtualBox:~$ ls -a
+.              .dropbox-dist  .ssh
+..             .gnupg         .sudo_as_admin_successful
+.bash_history  Images         Téléchargements
+.bash_logout   .local         .vboxclient-clipboard.pid
+.bashrc        Modèles        .vboxclient-display-svga-x11.pid
+Bureau         .mozilla       .vboxclient-draganddrop.pid
+.cache         Musique        .vboxclient-seamless.pid
+.config        .pki           Vidéos
+Documents      .profile       .vscode
+.dropbox       Public
+Dropbox        snap
+yoann@yoann-VirtualBox:~$ ls Bureau
+yoann@yoann-VirtualBox:~$ ls Dropbox
+'Application Passwords.dbx-passwords'  "Sauvegarde de l'ordinateur.dbx-backup"
+'index eau.doc'                         Tickets_2015332730190400287.pdf
+'pour Yo'                               Vault.dbx-vault
+yoann@yoann-VirtualBox:~$ 
+yoann@yoann-VirtualBox:~$ ls /home
+yoann
+yoann@yoann-VirtualBox:~$ ls -l/bin
+ls : option invalide -- '/'
+Saisissez « ls --help » pour plus d'informations.
+yoann@yoann-VirtualBox:~$ ls -l /bin
+lrwxrwxrwx 1 root root 7 sept. 10 15:08 /bin -> usr/bin
+yoann@yoann-VirtualBox:~$ pwd
+/home/yoann
+yoann@yoann-VirtualBox:~$ cd Images
+yoann@yoann-VirtualBox:~/Images$ cd ..
+yoann@yoann-VirtualBox:~$ cd /opt
+yoann@yoann-VirtualBox:/opt$ cd ../home/yoann
+yoann@yoann-VirtualBox:~$ cd~
+
+La commande « cd~ » n'a pas été trouvée, voulez-vous dire :
+
+  commande « cdw » du deb cdw (0.8.1-1build4)
+  commande « cde » du deb cde (0.1+git9-g551e54d-1.1build1)
+  commande « cdo » du deb cdo (1.9.9~rc1-1)
+  commande « cdp » du deb irpas (0.10-7)
+  commande « cdb » du deb tinycdb (0.78build1)
+  commande « cd5 » du deb cd5 (0.1-4)
+  commande « cdi » du deb cdo (1.9.9~rc1-1)
+
+Essayez : sudo apt install <nom du deb>
+
+yoann@yoann-VirtualBox:~$ cd ~
+yoann@yoann-VirtualBox:~$ pwd
+/home/yoann
+yoann@yoann-VirtualBox:~$ 
