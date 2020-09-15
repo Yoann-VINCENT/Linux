@@ -1,0 +1,54 @@
+yoann@yoann-VirtualBox:~$ cd ~/quests/shell
+yoann@yoann-VirtualBox:~/quests/shell$ unzip pla*
+Archive:  planets.zip
+   creating: planets/
+  inflating: planets/mercury.jpeg    
+  inflating: planets/earth.jpeg      
+  inflating: planets/pluto.jpeg      
+  inflating: planets/arrakis.jpeg    
+  inflating: planets/jupiter.jpeg    
+  inflating: planets/venus.jpeg      
+  inflating: planets/mars.jpeg       
+  inflating: planets/cybertron.jpeg  
+  inflating: planets/coruscant.jpeg  
+  inflating: planets/uranus.jpeg     
+  inflating: planets/neptune.jpeg    
+  inflating: planets/saturn.jpeg     
+yoann@yoann-VirtualBox:~/quests/shell$ mkdir les_planètes
+yoann@yoann-VirtualBox:~/quests/shell$ cd ~/quests/shell/les_planètes
+yoann@yoann-VirtualBox:~/quests/shell/les_planètes$ mkdir {réelles,fictives,habitées} les_planètes
+yoann@yoann-VirtualBox:~/quests/shell/les_planètes$ cd ~/quests/shell/les_planètes/réelles
+yoann@yoann-VirtualBox:~/quests/shell/les_planètes/réelles$ mkdir {terrestres,géantes-gazeuses,planètes-naines} réelles
+yoann@yoann-VirtualBox:~/quests/shell/les_planètes/réelles$ cd -
+/home/yoann/quests/shell/les_planètes
+yoann@yoann-VirtualBox:~/quests/shell/les_planètes$ mv earth.jpeg jupiter.jpeg mars.jpeg mercury.jpeg neptune.jpeg pluto.jpeg saturn.jpeg uranus.jpeg venus.jpeg réelles
+yoann@yoann-VirtualBox:~/quests/shell/les_planètes$ mv arrakis.jpeg c*.jpeg fictives
+yoann@yoann-VirtualBox:~/quests/shell/les_planètes$ cp réelles/earth.jpeg fictives/arrakis.jpeg fictives/c*.jpeg habitées
+yoann@yoann-VirtualBox:~/quests/shell/les_planètes$ cd réelles
+yoann@yoann-VirtualBox:~/quests/shell/les_planètes/réelles$ mv earth.jpeg mars.jpeg mercury.jpeg venus.jpeg terrestres
+yoann@yoann-VirtualBox:~/quests/shell/les_planètes/réelles$ mv jupiter.jpeg neptune.jpeg uranus.jpeg saturn.jpeg géantes-gazeuses
+yoann@yoann-VirtualBox:~/quests/shell/les_planètes/réelles$ mv pluto.jpeg planètes-naines
+yoann@yoann-VirtualBox:~/quests/shell/les_planètes/réelles$ rm -r planètes-naines
+yoann@yoann-VirtualBox:~/quests/shell/les_planètes/réelles$ cd -
+yoann@yoann-VirtualBox:~/quests/shell/les_planètes$ find
+.
+./réelles
+./réelles/géantes-gazeuses
+./réelles/géantes-gazeuses/uranus.jpeg
+./réelles/géantes-gazeuses/saturn.jpeg
+./réelles/géantes-gazeuses/jupiter.jpeg
+./réelles/géantes-gazeuses/neptune.jpeg
+./réelles/terrestres
+./réelles/terrestres/mars.jpeg
+./réelles/terrestres/mercury.jpeg
+./réelles/terrestres/venus.jpeg
+./réelles/terrestres/earth.jpeg
+./fictives
+./fictives/coruscant.jpeg
+./fictives/arrakis.jpeg
+./fictives/cybertron.jpeg
+./habitées
+./habitées/coruscant.jpeg
+./habitées/arrakis.jpeg
+./habitées/cybertron.jpeg
+./habitées/earth.jpeg
